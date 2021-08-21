@@ -1,0 +1,14 @@
+@import 'globals';
+// @import './desktop';
+
+@media (min-width:999px){
+    @import './desktop';
+}
+
+@media (min-width:500px) and (max-width:1000px){
+    @import './tablet';
+}
+
+@media (max-width:502px){
+    @import './mobile';
+}
