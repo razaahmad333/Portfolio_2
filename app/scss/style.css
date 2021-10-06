@@ -397,7 +397,7 @@ body {
   }
   .meraPhoto img {
     width: 50%;
-    border-radius: 50%;
+    border-radius: 10px;
   }
   .mereBaare h3 {
     margin: 0;
@@ -794,7 +794,7 @@ body {
   }
   .meraPhoto img {
     width: 50%;
-    border-radius: 50%;
+    border-radius: 8px;
   }
   .mereBaare h3 {
     margin: 0;
@@ -1107,7 +1107,7 @@ body {
   }
   .meraPhoto img {
     width: 90%;
-    border-radius: 50%;
+    border-radius: 10px;
   }
   .mereBaare {
     padding: 10px;

@@ -1,81 +1,77 @@
-section{
-    position: relative;
+section {
+  position: relative;
 }
 
-.links{
-    display: none;
+.links {
+  display: none;
 }
 
-.container{
-    text-align: center;
+.container {
+  text-align: center;
 }
 
-.welcome{
-    padding-top: 60px;
+.welcome {
+  padding-top: 60px;
 }
 .welcomeContent {
-    padding: 0 10px;
-    h1 {
-        font-size: 2em;
+  padding: 0 10px;
+  h1 {
+    font-size: 2em;
+  }
 
+  p {
+    font-size: 1.5em;
+  }
+}
+
+.navbar {
+  position: fixed;
+  z-index: +1;
+}
+
+.brandName {
+  font-size: 3em;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  .icons {
+    img {
+      width: 50%;
     }
-
-    p {
-        font-size: 1.5em;
+  }
+  #upwork {
+    img {
+      width: 100%;
     }
+  }
 }
 
-.navbar{
-    position: fixed;
-    z-index: +1;
+.sectionHeader {
+  text-align: left;
+  font-size: 2.5em;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
-.brandName{
-    font-size: 3em;
-    padding: 5px 0;
-    text-align: center;
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  padding: 30px;
+  padding-bottom: 100px;
 }
 
-.contacts{
-    display: flex;
-    justify-content: space-evenly;
-    .icons{
-        img{
-            width: 50%;
-        }
-    }
-    #upwork{
-        img{
-            width: 100%;
-        }
-    }
+.skill {
+  // background: transparent;
+  border-radius: 15px;
+  .skillName {
+    display: none;
+  }
 }
-
-
-.sectionHeader{
-    text-align: left;
-    font-size: 2.5em;
-    padding-left: 30px;
-    padding-bottom: 20px;
-}
-
-.skills{
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    grid-gap: 2em;
-    padding: 30px;
-    padding-bottom: 100px;   
-}
-
-
-.skill{
-    // background: transparent;
-    border-radius: 15px;
-    .skillName{
-        display: none;
-    }
-}
-
 
 // .project{
 //     .projectImage{
@@ -88,273 +84,265 @@ section{
 // }
 
 .project {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: $projectBg;
+  height: 240px;
+  img {
+    display: block;
+    // transition: transform 0.5s ease-in-out;
+    width: 80%;
     margin: 0 auto;
-    padding-top: 30px;
-    text-align: center;
     border-radius: 10px;
-    background-color: $projectBg;
-    height: 240px;
-    img{
+  }
+  background: transparent;
+
+  &:hover {
+    background: $projectBg;
+    .projectImage {
+      img {
+        // width: 98%;
+        transform: rotateZ(-1deg);
+      }
+    }
+
+    .liveLink {
+      display: block;
+      font-size: 1.5em;
+      position: relative;
+      top: -140px;
+      width: 20%;
+    }
+
+    .projectName {
+      position: relative;
+      top: -205px;
+      font-size: 1.5em;
+    }
+
+    .technologiesUsed {
+      position: relative;
+      top: -55px;
+      img {
         display: block;
-        // transition: transform 0.5s ease-in-out;
-        width: 80%;
-        margin: 0 auto;
-        border-radius: 10px;
+      }
     }
-    background: transparent;
-
-    &:hover{
-        background: $projectBg;
-        .projectImage{
-
-            img{
-                // width: 98%;
-                transform: rotateZ(-1deg);
-            }
-        }
-
-        .liveLink{
-            display: block;
-            font-size: 1.5em;
-            position: relative;
-            top: -140px;
-            width: 20%;
-        }
-
-        .projectName{
-            position: relative;
-            top: -205px;
-            font-size: 1.5em;
-        }
-
-        .technologiesUsed{
-            position: relative;
-            top: -55px;
-            img{
-                display: block;
-            }
-        }
-    }
+  }
 }
 
 .projectName {
-    margin: 0 auto;
-    position: relative;
-    top: 10px;
-    padding: 4px 8px;
-    width: fit-content;
-    transition: top 1s ease-in-out, font-size 1s ease-in-out;
-    &:hover{
-        transform: rotateZ(-2deg);
-
-    }
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  padding: 4px 8px;
+  width: fit-content;
+  transition: top 1s ease-in-out, font-size 1s ease-in-out;
+  &:hover {
+    transform: rotateZ(-2deg);
+  }
 }
-.liveLink{
-    transition: display 0.1s ease-in-out, top 3s ease-in-out;
-    margin: 0 auto;
-    width: fit-content;
-    &:hover{
-        transform: rotateZ(-2deg);
-
-    }
+.liveLink {
+  transition: display 0.1s ease-in-out, top 3s ease-in-out;
+  margin: 0 auto;
+  width: fit-content;
+  &:hover {
+    transform: rotateZ(-2deg);
+  }
 }
 
-.technologiesUsed{
-    display: flex;
-    justify-content: space-evenly;
-    img{
-        display: none;
-        width: 40%;
-    }
+.technologiesUsed {
+  display: flex;
+  justify-content: space-evenly;
+  img {
+    display: none;
+    width: 40%;
+  }
 }
 
-.blender{
-    img{
-        width: 35px;
-    }
+.blender {
+  img {
+    width: 35px;
+  }
 }
 
-
-
-.meraPhoto{
-    img{
-        width:90%;
-        border-radius: 50%;
-    }
+.meraPhoto {
+  img {
+    width: 90%;
+    border-radius: 10px;
+  }
 }
 
-.mereBaare{
-    padding: 10px;
-    h3{
-        margin: 0;
-        padding: 0;
-        font-size: 3em;
-    }
-    p{
-        font-size: 1.5em;
-    }
+.mereBaare {
+  padding: 10px;
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+  }
 }
 
-.footero{
-    text-align: left;
-    h3{
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-    }
-    position: relative;
-    // top: -40px;
-    margin: 0 auto;
-    padding-left: 10px;
-    height: 300px;
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.3em;
-    }
+.footero {
+  text-align: left;
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+  }
+  position: relative;
+  // top: -40px;
+  margin: 0 auto;
+  padding-left: 10px;
+  height: 300px;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+  }
 }
 
-
-section{
-    position: relative;
-    // padding-top: 70px;
+section {
+  position: relative;
+  // padding-top: 70px;
 }
 
- 
-.skillSection{
-    padding-top: 70px;
+.skillSection {
+  padding-top: 70px;
 }
 .custom-shape-divider-top-1629566985 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-top-1629566985 svg {
-    position: relative;
-    display: block;
-    width: calc(118% + 1.3px);
-    height: 112px;
+  position: relative;
+  display: block;
+  width: calc(118% + 1.3px);
+  height: 112px;
 }
 
 .custom-shape-divider-top-1629566985 .shape-fill {
-    fill: $welcomeSection;
+  fill: $welcomeSection;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-top-1629566985 svg {
-        width: calc(134% + 1.3px);
-        height: 66px;
-    }
+  .custom-shape-divider-top-1629566985 svg {
+    width: calc(134% + 1.3px);
+    height: 66px;
+  }
 }
 
 /// skill vs project
 
-.projects{
-    padding-top: 0;
+.projects {
+  padding-top: 0;
 }
 
 .custom-shape-divider-bottom-1629567417 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-bottom-1629567417 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 135px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 135px;
 }
 
 .custom-shape-divider-bottom-1629567417 .shape-fill {
-    fill: $projectSection;
+  fill: $projectSection;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1629567417 svg {
-        width: calc(134% + 1.3px);
-        height: 66px;
-    }
+  .custom-shape-divider-bottom-1629567417 svg {
+    width: calc(134% + 1.3px);
+    height: 66px;
+  }
 }
 
 /// project vs about
 
-.aboutSection{
-    padding-top: 70px;
+.aboutSection {
+  padding-top: 70px;
 }
 .custom-shape-divider-top-1629568114 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-top-1629568114 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 135px;
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 135px;
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-top-1629568114 .shape-fill {
-    fill: $projectSection
+  fill: $projectSection;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-top-1629568114 svg {
-        width: calc(134% + 1.3px);
-        height: 66px;
-    }
+  .custom-shape-divider-top-1629568114 svg {
+    width: calc(134% + 1.3px);
+    height: 66px;
+  }
 }
-
 
 // about vs reference
-.aboutSection{
-    padding-bottom: 50px;
+.aboutSection {
+  padding-bottom: 50px;
 }
 
-.footero{
-    padding-top: 50px;
+.footero {
+  padding-top: 50px;
 }
 .custom-shape-divider-bottom-1629568392 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-bottom-1629568392 svg {
-    position: relative;
-    display: block;
-    width: calc(106% + 1.3px);
-    height: 149px;
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 149px;
 }
 
 .custom-shape-divider-bottom-1629568392 .shape-fill {
-    fill: $footer;
+  fill: $footer;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1629568392 svg {
-        width: calc(134% + 1.3px);
-        height: 66px;
-    }
+  .custom-shape-divider-bottom-1629568392 svg {
+    width: calc(134% + 1.3px);
+    height: 66px;
+  }
 }
