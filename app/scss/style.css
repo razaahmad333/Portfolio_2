@@ -312,9 +312,12 @@ body {
     height: 380px;
     background: transparent;
   }
-  .project img {
+  .project .projectImage img {
     display: block;
     width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 auto;
     border-radius: 10px;
   }
@@ -343,6 +346,9 @@ body {
   }
   .project:hover .technologiesUsed img {
     display: block;
+  }
+  .techno {
+    text-align: center;
   }
   .projectName {
     margin: 0 auto;
@@ -396,7 +402,10 @@ body {
         grid-template-columns: 1fr 1fr;
   }
   .meraPhoto img {
-    width: 50%;
+    width: 60%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
   }
   .mereBaare h3 {
@@ -1023,7 +1032,8 @@ body {
     display: none;
   }
   .project {
-    margin: 0 auto;
+    margin: 35px auto;
+    margin-bottom: 0;
     padding-top: 30px;
     text-align: center;
     border-radius: 10px;
@@ -1106,7 +1116,7 @@ body {
     width: 35px;
   }
   .meraPhoto img {
-    width: 90%;
+    width: 50%;
     border-radius: 10px;
   }
   .mereBaare {
