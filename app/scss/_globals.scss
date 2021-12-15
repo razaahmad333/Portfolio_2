@@ -29,7 +29,10 @@ body {
   color: white;
   font-family: "Urbanist", sans-serif;
 }
-
+// font-family: "Kaushan Script", cursive;
+.brandName {
+  font-family: "Kaushan Script", cursive;
+}
 .sectionHeader {
   font-family: "Urbanist", sans-serif;
 }
@@ -42,10 +45,7 @@ body {
 .welcomeSection {
   background-color: $welcomeSection;
   h1 {
-    font-family: "Kaushan Script", cursive;
-
-    // font-family: 'Rock Salt', cursive;
-    // font-family: 'Urbanist', sans-serif;
+    font-family: "Work Sans", sans-serif;
   }
   p {
     font-family: "Work Sans", sans-serif;
